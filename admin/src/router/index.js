@@ -7,6 +7,8 @@ import ItemCreate from '../views/ItemCreate.vue'
 import ItemList from '../views/ItemList.vue'
 import HeroCreate from '../views/HeroCreate.vue'
 import HeroList from '../views/HeroList.vue'
+import ArticleCreate from '../views/ArticleCreate.vue'
+import ArticleList from '../views/ArticleList.vue'
 
 Vue.use(VueRouter)
 
@@ -26,7 +28,11 @@ const routes = [
 
       {path: '/heroes/create', component: HeroCreate },
       {path: '/heroes/edit/:id', component: HeroCreate, props:true },
-      {path: '/heroes/list', component: HeroList}
+      {path: '/heroes/list', component: HeroList},
+
+      {path: '/articles/create', component: ArticleCreate },
+      {path: '/articles/edit/:id', component: ArticleCreate, props:true },
+      {path: '/articles/list', component: ArticleList}
     ]
   }
 ]
