@@ -9,6 +9,8 @@ import HeroCreate from '../views/HeroCreate.vue'
 import HeroList from '../views/HeroList.vue'
 import ArticleCreate from '../views/ArticleCreate.vue'
 import ArticleList from '../views/ArticleList.vue'
+import AdCreate from '../views/AdCreate.vue'
+import AdList from '../views/AdList.vue'
 
 Vue.use(VueRouter)
 
@@ -32,7 +34,11 @@ const routes = [
 
       {path: '/articles/create', component: ArticleCreate },
       {path: '/articles/edit/:id', component: ArticleCreate, props:true },
-      {path: '/articles/list', component: ArticleList}
+      {path: '/articles/list', component: ArticleList},
+
+      {path: '/ads/create', component: AdCreate },
+      {path: '/ads/edit/:id', component: AdCreate, props:true },
+      {path: '/ads/list', component: AdList}
     ]
   }
 ]
