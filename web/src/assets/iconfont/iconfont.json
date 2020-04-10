@@ -1,0 +1,51 @@
+{
+  "id": "1619757",
+  "name": "王者",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1167280",
+      "name": "视频",
+      "font_class": "shipin",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "2012069",
+      "name": "书",
+      "font_class": "shu",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "9065543",
+      "name": "省略",
+      "font_class": "shenglve",
+      "unicode": "e683",
+      "unicode_decimal": 59011
+    },
+    {
+      "icon_id": "1601289",
+      "name": "news",
+      "font_class": "ziyuan",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "1608363",
+      "name": "menu",
+      "font_class": "menu",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "6654507",
+      "name": "card-hero",
+      "font_class": "card-hero",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    }
+  ]
+}

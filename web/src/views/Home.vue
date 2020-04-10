@@ -18,6 +18,27 @@
         <i class="sprite sprite-arrow mr-1"></i> 收起
       </div>
     </div>
+    <!-- end of nav nav-icon -->
+    <m-list-card icon="menu" title="新闻资讯" :categories="newsCats">
+      <template #items="{category}">
+        <div class="py-3" v-for="(item, i) in category.newsList" :key="i">
+          <span>[{{item.categoryName}}]</span>
+          <span>|</span>
+          <span>{{item.title}}</span>
+          <span>{{item.data}}</span>
+        </div>
+      </template>
+    </m-list-card>
+    <!-- end of news -->
+
+    <m-card icon="card-hero" title="英雄列表"></m-card>
+    <!-- end of hero -->
+
+    <m-card icon="shipin" title="精彩视频"></m-card>
+    <!-- end of video -->
+
+    <m-card icon="shu" title="图文攻略"></m-card>
+    <!-- end of img content -->
   </div>
 </template>
 
@@ -28,8 +49,48 @@ export default {
       swiperOptions: {
         pagination: {
           el: '.pagination-home'
+        }
+      },
+      newsCats: [
+        {
+          name: '热门',
+          newsList: new Array(5).fill(1).map(() => ({
+            categoryName: '公告',
+            title: '新皮肤爆料丨拔刀斩恶魂！橘右京新装登场~',
+            data: '04/10'
+        }))
         },
-      }
+        {
+          name: '新闻',
+          newsList: new Array(5).fill(1).map(() => ({
+            categoryName: '新闻',
+            title: '新皮肤爆料丨拔刀斩恶魂！橘右京新装登场~',
+            data: '04/10'
+        }))
+        },
+        {
+          name: '公告',
+          newsList: new Array(5).fill(1).map(() => ({
+            categoryName: '公告',
+            title: '新皮肤爆料丨拔刀斩恶魂！橘右京新装登场~',
+            data: '04/10'
+        }))
+        },{
+          name: '活动',
+          newsList: new Array(5).fill(1).map(() => ({
+            categoryName: '活动',
+            title: '新皮肤爆料丨拔刀斩恶魂！橘右京新装登场~',
+            data: '04/10'
+        }))
+        },{
+          name: '赛事',
+          newsList: new Array(5).fill(1).map(() => ({
+            categoryName: '赛事',
+            title: '新皮肤爆料丨拔刀斩恶魂！橘右京新装登场~',
+            data: '04/10'
+        }))
+        }
+      ]
     }
   }
 }
