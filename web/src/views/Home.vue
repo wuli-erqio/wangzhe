@@ -20,6 +20,7 @@
     </div>
     <!-- end of nav nav-icon -->
     <m-list-card icon="menu" title="新闻资讯" :categories="newsCats">
+      <!-- #items关联ListCard子组件的绑定的子组件的category -->
       <template #items="{category}">
         <div class="py-3" v-for="(item, i) in category.newsList" :key="i">
           <span>[{{item.categoryName}}]</span>

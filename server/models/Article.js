@@ -8,9 +8,9 @@ const schema = new mongoose.Schema({
     type: mongoose.SchemaTypes.ObjectId,
     ref: 'Category'
   }],
-  body: {
-    type: String
-  }
+  body: { type: String }
+}, {
+  timestamps: true
 })
 
 module.exports = mongoose.model('Article', schema)

@@ -11,7 +11,7 @@ app.set('secret', '3333sdefcwd5c30cwsc2')
 
 require('./plugins/db')(app)
 require('./routes/admin')(app)
-// require('./routes/web')(app)
+require('./routes/web')(app)
 
 app.listen(3000, () => {
   console.log('http://localhost:3000')

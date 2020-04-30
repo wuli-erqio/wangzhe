@@ -7,6 +7,7 @@
     </div>
     <swiper class="pt-3" >
       <swiper-slide v-for="(category, i) in categories" :key="i">
+        <!-- 此处为插槽，具名插槽，绑定传给父元素 -->
         <slot name="items" :category="category"></slot>
       </swiper-slide>
     </swiper>

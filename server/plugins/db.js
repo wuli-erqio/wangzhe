@@ -4,7 +4,7 @@ module.exports = app => {
     useNewUrlParser: true,
     useUnifiedTopology: true
   })
-
-  // require('require-all')(__dirname + '/../models')
+  // 把某个文件夹下边的js都引入一边 npm i require-all
+  require('require-all')(__dirname + '/../models')
   
 }
