@@ -2,10 +2,13 @@
   <m-card :icon="icon" :title="title">
     <div class="nav jc-between">
       <div class="nav-item" :class="{active: active === i}" v-for="(category, i) in categories" :key="i">
-        <div class="nav-link" @click="active=i">{{category.name}}</div>
+        <div class="nav-link" @click="active = $refs.list.$swiper.slideTo(i)">{{category.name}}</div>
       </div>
     </div>
-    <swiper class="pt-3" >
+    <swiper
+      class="pt-3"
+      ref="list"
+      @slide-change="() => active = $refs.list.$swiper.realIndex" >
       <swiper-slide v-for="(category, i) in categories" :key="i">
         <!-- 此处为插槽，具名插槽，绑定传给父元素 -->
         <slot name="items" :category="category"></slot>
