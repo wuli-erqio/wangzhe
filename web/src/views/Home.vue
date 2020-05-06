@@ -22,12 +22,17 @@
     <m-list-card icon="menu" title="新闻资讯" :categories="newsCats">
       <!-- #items关联ListCard子组件的绑定的子组件的category -->
       <template #items="{category}">
-        <div class="py-2 fs-lg d-flex" v-for="(item, i) in category.newsList" :key="i">
+        <router-link
+          class="py-2 fs-lg d-flex"
+          v-for="(item, i) in category.newsList"
+          :key="i"
+          tag="div"
+          :to="`/articles/${item._id}`">
           <span class="text-info">[{{item.categoryName}}]</span>
           <span class="px-2">|</span>
           <span class="flex-1 text-dark-1 text-ellipsis pr-2">{{item.title}}</span>
           <span class="text-grey-1 fs-sm">{{ item.createdAt | data }}</span>
-        </div>
+        </router-link>
       </template>
     </m-list-card>
     <!-- end of news -->
