@@ -21,6 +21,9 @@ a {
   color: #999;
 }
 
+p {
+  line-height: 1.5em;
+}
 @each $colorKey,$color in $colors {
   .text-#{$colorKey} {
     color: $color;
@@ -178,3 +181,9 @@ a {
   }
 }
 
+// borders
+@each $dir in (top, right, bottom, left) {
+  .border-#{$dir} {
+    border-#{$dir}: 1px solid $border-color;
+  }
+}
