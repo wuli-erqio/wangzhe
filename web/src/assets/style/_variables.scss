@@ -1,6 +1,7 @@
 // colors
 $colors:(
   primary: #DB9E3F,
+  "danger": #791a16,
   "white": #fff,
   "light": #f9f9f9,
   "light-1": #d4d9de,
@@ -11,6 +12,7 @@ $colors:(
   "grey-1": #666,
   "info": #4b67af,
   "blue": #4394e4,
+  "blue-1": #203695,
 );
 $border-color: map-get($colors, 'light-1');
 // font size
